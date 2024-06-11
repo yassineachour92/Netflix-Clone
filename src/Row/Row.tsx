@@ -10,7 +10,7 @@ interface RowProps {
   isLargeRow: boolean;
 }
 
-interface MovieType {
+export interface MovieType {
   name: string;
   backdrop_path: string;
   id: number;
@@ -27,6 +27,7 @@ interface MovieType {
   video: boolean;
   vote_average: number;
   vote_count: number;
+  original_name:string
 }
 
 const Row = ({ title, fetchUrl, isLargeRow }: RowProps) => {

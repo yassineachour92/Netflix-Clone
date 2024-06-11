@@ -1,5 +1,6 @@
-.row{
-    margin-left: 20px;
+.row {
+  color: white;
+  margin-left: 20px;
 }
 
 .row__posters {
@@ -24,9 +25,9 @@
   transform: scale(1.08);
 }
 
-.row__postersLarge{
-    max-height: 400px;
+.row__postersLarge {
+  max-height: 400px;
 }
 .row__postersLarge:hover {
-    transform: scale(1.08);
-  }
+  transform: scale(1.08);
+}
