@@ -8,8 +8,6 @@
   pointer-events: none;
 }
 .App{
-  margin-top: 15px;
-
   background-color: #211f1f;
 }
 @media (prefers-reduced-motion: no-preference) {

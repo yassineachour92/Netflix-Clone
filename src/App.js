@@ -4,6 +4,7 @@ import Row from "./Row/Row.tsx";
 
 import "./App.css";
 import Banner from "./Banner/Banner.tsx";
+import NavBar from "./NavBar/NavBar.tsx";
 
 const generateRows = (requests) => {
   return Object.keys(requests).map((key) => {
@@ -11,13 +12,16 @@ const generateRows = (requests) => {
       .replace("fetch", "")
       .replace(/([A-Z])/g, " $1")
       .trim();
+
     return (
-      <Row
-        key={key}
-        title={title}
-        fetchUrl={requests[key]}
-        isLargeRow={title === "Netflix Originals"}
-      />
+      <>
+        <Row
+          key={key}
+          title={title}
+          fetchUrl={requests[key]}
+          isLargeRow={title === "Netflix Originals"}
+        />
+      </>
     );
   });
 };
@@ -25,6 +29,7 @@ const generateRows = (requests) => {
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <Banner />
       {generateRows(requests)}
     </div>
